@@ -1,0 +1,275 @@
+/* MAINLY INCLUDES Preview PAGE CSS */
+:root {
+  --main--: #09d8ed;
+  --back--: black;
+  --background-url--: url(Images/background-3.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: var(--background-url--);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.mainPageHeader {
+  width: 100%;
+  height: 60px;
+  background-color: var(--back--);
+}
+
+.mainPageHeader p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 7px;
+  color: var(--main--);
+  font-weight: 600;
+}
+
+.Questions_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.Question_Container {
+  width: 90%;
+  border: 1px solid #780000;
+  border-bottom: 3px solid #780000;
+  margin-bottom: 10px;
+}
+.question {
+  line-height: 35px;
+  padding: 10px;
+  color: var(--main--);
+  font-weight: 600;
+}
+.btnsection {
+  margin-top: 25px;
+  margin-bottom: 100px;
+  width: 98%;
+}
+.arrow {
+  color: #000000;
+  transition: all 0.2s;
+}
+.surveybtn {
+  float: right;
+  padding: 10px 20px;
+  background-color: var(--main--);
+  color: rgb(0, 0, 0);
+  border: 0;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+.surveybtn:hover {
+  background-color: #780000;
+  color: var(--main--);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.surveybtn:hover .arrow {
+  color: var(--main--);
+}
+
+/* MAINLY INCLUDES SURVEY PAGE CSS */
+.survey__quesAns {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+  margin-top: 130px;
+  margin-bottom: 165px;
+}
+.survey__Ques {
+  font-size: 25px;
+  letter-spacing: 4px;
+  overflow-wrap: anywhere;
+  text-align: center;
+  color: var(--main--);
+  font-weight: bold;
+}
+.bold {
+  font-weight: 600;
+}
+.survey__Btn {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background: none;
+  color: var(--main--);
+  border: 2px solid #780000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnGreen {
+  color: var(--main--);
+  background-color: #780000;
+  text-shadow: none;
+  font-weight: bold;
+  border: 0;
+  border-bottom: 3px solid var(--main--);
+}
+
+.hidden {
+  display: none;
+}
+.mr50px {
+  margin-right: 50px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+}
+.questionNumber {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 3px solid black;
+  margin-top: 40px;
+}
+
+/* Result page Css */
+
+.answers_table {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  color: var(--main--);
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+table * {
+  border-bottom: 1px solid #780000;
+  width: 400px;
+}
+
+thead {
+  border-bottom: 3px solid #780000;
+}
+
+td,th {
+padding: 20px 10px;
+}
+
+.percent {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 45px;
+  color: white;
+  font-weight: bold;
+}
+
+/* form page css */
+
+.formContainer {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  /* background-color: black; */
+  /* opacity: 0.9; */
+}
+
+.inputContainer {
+  border-bottom: 2px solid var(--main--);
+  margin: auto;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.inputContainer input {
+  font-size: 20px;
+  border: none;
+  width: 75%;
+  background: none;
+  outline: none;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.inputContainer label {
+  width: 25%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.buttonContainer {
+  padding-bottom: 20px;
+}
+.submit {
+  color: black;
+  display: block;
+  font-size: 20px;
+  padding: 12px 30px;
+  margin: auto;
+  margin-top: 30px;
+  border: none;
+  background: var(--main--);
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.submit:hover {
+  color: black;
+  font-weight: bold;
+  background-color: #700606;
+}
+
+.pageLink {
+  color: #a52f2f;
+  background: var(--main--);
+  padding: 8px;
+  border-radius: 25px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.pageLink:hover {
+  color: black;
+  background: #780000;
+  font-weight: bold;
+}
+
+.surveyPageLink {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+
+.previewPageLink {
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}
+
+.timer {
+  color: #c11313;
+  text-align: end;
+  margin-right: 100px;
+  font-size: 20px;
+}
